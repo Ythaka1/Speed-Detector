@@ -1,11 +1,13 @@
 function checkSpeed () {
 
-    let demeritPoints = 80;
+    const speedLimit = 70 
 
-    if (speed < 70 ) {
+    let demeritPoints = 0;
+
+    if (speed < speedlimit ) {
         console.log("ok")
     }
-    else { Math.floor((speed - 70) / 5);
+    else { Math.floor((speed - speedLimit) / 5);
     console.log('points: ${demeritPoints}');
 
     if (demeritPoints > 12) {
